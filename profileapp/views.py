@@ -11,6 +11,7 @@ from .decorators import unauthenticated_user
 
 @login_required(login_url='login')
 def index(request):
+    # print('hello')
     return render(request, 'profileapp/home.html')
 
 @login_required(login_url='login')
