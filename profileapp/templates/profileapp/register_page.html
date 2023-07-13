@@ -48,6 +48,7 @@
         <h1 class="signup-heading">Sign Up</h1>
         <div class="user-content-container user-profile-form-container">
           <form action="" method="POST">
+<!--              {{form}}-->
             {% csrf_token %}
             <ul>
               <li class="name">
@@ -67,12 +68,14 @@
                 {{form.password1.errors}}
                 {{form.password1}}
               </li>
-              
+
               <li class="confirm-pass">
                 <label for="">Confirm Password</label>
                 {{form.password2.errors}}
                 {{form.password2}}
               </li>
+
+
           </ul>
 
           <button class="signup-button">Sign up</button>
