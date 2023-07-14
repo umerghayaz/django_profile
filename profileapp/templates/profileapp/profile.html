@@ -38,20 +38,27 @@
 
             <div class="user-content-container user-profile-form-container">
                  {% csrf_token %}
-                <ul>
-                    <li class="name">
-                        <label for="user-name">Your Name</label>
-                        {{form.name}}
-                    </li>
-                    <li class="title">
-                        <label for="user-title">Your title</label>
-                        {{form.title}}
-                    </li>
-                    <li class="desc">
-                        <label for="user-desc">Description</label>
-                        {{form.desc}}
-                    </li>
-                </ul>
+
+                {{form}}
+<!--                <ul>-->
+<!--                    <li class="name">-->
+<!--                        <label for="user-name">Your Name</label>-->
+<!--                        {{form.name}}-->
+<!--                    </li>-->
+<!--                    <li class="title">-->
+<!--                        <label for="user-title">Your title</label>-->
+<!--                        {{form.title}}-->
+<!--                    </li>-->
+<!--                    <li class="desc">-->
+<!--                        <label for="user-desc">Description</label>-->
+<!--                        {{form.desc}}-->
+<!--                    </li>-->
+<!--                  <li class="desc">-->
+<!--                      <label for="user-desc">Image</label>-->
+<!--                <img src="{% static 'images/default.jpg' %}" alt="user-image" width="" srcset="">-->
+
+<!--         </li>-->
+<!--                </ul>-->
                 <button class="profile-save-button"> Save </button>
             </div>
         </form>
